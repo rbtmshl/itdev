@@ -1,9 +1,9 @@
 Itdev::Application.routes.draw do
-  root to: 'static_pages#home'
+  get "static_pages/home"
 
-  match '/fibonacci',    to: 'static_pages#fibonacci'
+  get "static_pages/fibonacci"
 
-  match '/counter',    to: 'static_pages#counter'
+  get "static_pages/counter"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
